@@ -1,0 +1,18 @@
+   <!DOCTYPE html>
+   <html>
+   <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Clerk widget test</title>
+   </head>
+   <body>
+     <h1>Clerk widget test</h1>
+     <script src="https://clerk.chat/assets/external/clerk-chat-form-builder.min.js?v=1790958359557" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const options = {"type":"popup","minHeight":300,"width":400,"dropShadow":true,"backgroundColor":"#FFFFFF","overlayColor":"#f7f8fea1","shadowColor":"0px 5px 32px 0px rgba(31, 41, 54, 0.08)","borderStyle":"straight","position":"center-center","sideImagePosition":null,"sideImage":null,"widgetBtnColor":"#394376","widgetBtnHoverColor":"#788DF8","widgetPosition":"bottom-right-corner","isWidgetTextAvailable":false,"isFormOpenedByDefault":false,"widgetText":"Hi and welcome 👋","webhookURL":null,"isPBVisible":true,"coupon":{"type":"phone","code":"Adventure","confirmation":"Thanks for signing up! Use code to claim your offer."},"appKey":"4bd3cd26-00a2-42fb-91fd-e7cbd64189b0","elements":[{"type":"text","letterSpacing":"0.2px","lineSpacing":"100%","outerHTML":"<p><span style=\"font-size: 18px;\"><strong>Bouken Text Message Opt In</strong></span></p>"},{"type":"text","letterSpacing":"0.2px","lineSpacing":"100%","outerHTML":"<p>Your adventure begins here</p>"},{"type":"phone-input","font":"Arial","fontWeight":"Regular","fontSize":14,"activeTextColor":"#000000","placeholderColor":"#B8B8B8","placeholderText":"Placeholder here","label":false,"labelColor":"#4D5256","labelText":"","backgroundColor":"#FFFFFF","borderColor":"#CBD2DE","borderOnFocus":"#5754F6","borderStyle":"straight","inputHeight":48,"relatedTo":"coupon","iso2":"us"},{"type":"button","font":"Arial","fontWeight":"Regular","fontSize":14,"textColor":"#FFFFFF","buttonText":"Get Code","color":"#394376","colorOnHover":"#697BD7","borderStyle":"straight","buttonHeight":48,"isLinkBtn":false,"linkUrl":null,"linkType":"default","relatedTo":"coupon"},{"type":"compliance","text":"By messaging {company} you consent to receiving SMS messages. Standard rates apply. {Optional text or url}","color":"#BFBFBF","linkColor":"#3f5df4","fontSize":12,"company":"Bouken","optional":"<p></p>"}],"fonts":[]}
+      initClerkChatForm(options);
+    });
+  </script>
+   </body>
+   </html>
